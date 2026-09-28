@@ -1,0 +1,350 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f1edff;
+color: #403568;
+}
+
+/* ============================= /
+/ ENCABEZADO /
+/ ============================= */
+
+.encabezado {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+min-height: 125px;
+padding: 18px 45px;
+background: linear-gradient(135deg, #d9ccff, #f1edff);
+border-bottom: 3px solid #7656c7;
+overflow: hidden;
+}
+
+.logo-universidad {
+width: 150px;
+z-index: 2;
+}
+
+.logo-universidad img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.datos-universidad {
+text-align: center;
+flex: 1;
+z-index: 2;
+}
+
+.datos-universidad h1 {
+font-size: 25px;
+color: #604a9c;
+margin-bottom: 8px;
+}
+
+.facultad {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+
+.facultad span {
+width: 45px;
+height: 2px;
+background: #7656c7;
+}
+
+.facultad h2 {
+font-size: 18px;
+color: #604a9c;
+}
+
+.datos-universidad p {
+margin-top: 7px;
+font-size: 14px;
+color: #5d5575;
+}
+
+.foto-facultad {
+width: 130px;
+z-index: 2;
+}
+
+.foto-facultad img {
+width: 100%;
+height: 80px;
+object-fit: contain;
+}
+
+.decoracion {
+position: absolute;
+border-radius: 50%;
+opacity: 0.25;
+}
+
+.decoracion-izquierda {
+width: 150px;
+height: 150px;
+background: #a993e8;
+left: -70px;
+top: -60px;
+}
+
+.decoracion-derecha {
+width: 180px;
+height: 180px;
+background: #7656c7;
+right: -80px;
+bottom: -100px;
+}
+
+/* ============================= /
+/ CONTENEDOR SEMANA /
+/ ============================= */
+
+main {
+padding: 45px 20px;
+}
+
+.contenedor-semana {
+max-width: 1000px;
+margin: auto;
+}
+
+/* ============================= /
+/ TITULO /
+/ ============================= */
+
+.encabezado-semana {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 18px;
+}
+
+.encabezado-semana span {
+width: 80px;
+height: 3px;
+background: #7656c7;
+border-radius: 5px;
+}
+
+.encabezado-semana h2 {
+font-size: 30px;
+color: #604a9c;
+}
+
+.curso {
+text-align: center;
+margin-top: 8px;
+margin-bottom: 35px;
+color: #7656c7;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+/* ============================= /
+/ ACTIVIDAD /
+/ ============================= */
+
+.actividad {
+background: #ffffff;
+padding: 28px;
+border-radius: 18px;
+box-shadow: 0 8px 25px rgba(96, 74, 156, 0.15);
+border: 1px solid #ded5fa;
+}
+
+.titulo-actividad {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 25px;
+padding-bottom: 18px;
+border-bottom: 2px solid #eee8ff;
+}
+
+.titulo-actividad > i {
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #e5dcff;
+color: #7656c7;
+border-radius: 12px;
+font-size: 22px;
+}
+
+.titulo-actividad h3 {
+color: #604a9c;
+font-size: 21px;
+}
+
+.titulo-actividad p {
+margin-top: 5px;
+color: #77718d;
+font-size: 14px;
+}
+
+/* ============================= /
+/ TRABAJOS /
+/ ============================= */
+
+.trabajo {
+display: flex;
+align-items: center;
+gap: 18px;
+padding: 18px;
+margin-bottom: 15px;
+background: #f7f4ff;
+border: 1px solid #e0d8f7;
+border-radius: 14px;
+transition: 0.3s;
+}
+
+.trabajo {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(96, 74, 156, 0.12);
+}
+
+.icono-trabajo {
+min-width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #e5dcff;
+color: #7656c7;
+border-radius: 12px;
+font-size: 21px;
+}
+
+.informacion-trabajo {
+flex: 1;
+}
+
+.informacion-trabajo h4 {
+color: #604a9c;
+font-size: 17px;
+margin-bottom: 5px;
+}
+
+.informacion-trabajo p {
+color: #77718d;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.acciones {
+display: flex;
+gap: 8px;
+}
+
+.boton {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 7px;
+padding: 10px 15px;
+background: #7656c7;
+color: white;
+text-decoration: none;
+border-radius: 9px;
+font-size: 13px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.boton {
+background: #604a9c;
+transform: translateY(-1px);
+}
+
+.ver-figma {
+background: #604a9c;
+}
+
+/* ============================= /
+/ BOTON VOLVER /
+/ ============================= */
+
+.volver {
+margin-top: 25px;
+background: #604a9c;
+}
+
+/* ============================= /
+/ FOOTER /
+/ ============================= */
+
+footer {
+text-align: center;
+padding: 25px;
+margin-top: 20px;
+color: #77718d;
+font-size: 14px;
+}
+
+/* ============================= /
+/ RESPONSIVE /
+/ ============================= */
+
+@media (max-width: 800px) {
+
+.encabezado {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.logo-universidad {
+    width: 130px;
+}
+
+.foto-facultad {
+    width: 110px;
+}
+
+.datos-universidad h1 {
+    font-size: 20px;
+}
+
+.trabajo {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.acciones {
+    width: 100%;
+}
+
+.acciones .boton {
+    flex: 1;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.encabezado-semana h2 {
+    font-size: 23px;
+}
+
+.encabezado-semana span {
+    width: 40px;
+}
+
+.actividad {
+    padding: 18px;
+}
+
+}
